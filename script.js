@@ -16,9 +16,13 @@ function buildCanvas() {
             const  newColumn = document.createElement("div");
             newColumn.setAttribute("class", "col");
             newRow.appendChild(newColumn);
-
+            newColumn.addEventListener('mouseover', (event) => draw(event.target));
         }
     }
+}
+
+function draw(element) {
+    element.style.backgroundColor = "black";
 }
 
 function deleteGrid() {
@@ -30,7 +34,8 @@ function deleteGrid() {
 
 buildCanvas();
 
-slider.addEventListener('input', function() {
+
+slider.addEventListener('mouseup', function() {
     deleteGrid();
     sliderVal.textContent = slider.value + "x" + slider.value;
     buildCanvas();
