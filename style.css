@@ -8,3 +8,24 @@
     margin: 0;
     padding: 0;
 }
+
+/* Initial Configuration */
+
+body {
+    background-color: hsl(0, 25%, 97%);
+    font-family: Verdana, sans-serif;
+}
+
+/* Header */
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.header-font {
+    font-family: Georgia, serif;
+    font-size: 3em;
+}
