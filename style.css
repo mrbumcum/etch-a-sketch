@@ -100,4 +100,17 @@ body {
     background-color: #fefefe;
     box-shadow: 0.5em 0.5em 0.5em rgb(0 0 0 / 20%);
     margin-left: 5em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row {
+    display: flex;
+    border: solid #a9957b;
+    flex: 1;
+  }
+
+  .col {
+    border: solid #a9957b;
+    flex: 1;
   }
