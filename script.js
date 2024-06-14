@@ -41,3 +41,9 @@ slider.addEventListener('mouseup', function() {
     buildCanvas();
 });
 
+clearBtn.addEventListener('click', function(e) {
+    let cols = parentContainer.getElementsByClassName("col");
+    Array.from(cols).forEach(function(col) {
+        col.style.backgroundColor = "#fefefe";
+    });
+});
